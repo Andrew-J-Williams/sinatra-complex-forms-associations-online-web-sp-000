@@ -26,7 +26,7 @@ class PetsController < ApplicationController
     erb :'/pets/show'
   end
 
-  get '/pet/:id/edit'
+  get '/pet/:id/edit' do
 
   patch '/pets/:id' do
 
