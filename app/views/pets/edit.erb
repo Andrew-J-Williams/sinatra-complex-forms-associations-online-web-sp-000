@@ -8,10 +8,7 @@
   <input type="text" name="pet[name]" value="<%=@pet.name%>" id="pet_name">
 
 <h3>Existing Owner</h3>
-  <% @owner.each do |pet| %>
-    <input type="text" name="pet[owner_ids][]" id="<%=owner.id%>" value="<%=owner.id%>" <% if @pet.owner_id.include?(owner.id) %>><%= owner.name %></input><br>
-  <% end %>
-  <br>
+  
 
 <h3>New Owner</h3>
 
