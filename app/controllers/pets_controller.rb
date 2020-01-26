@@ -28,6 +28,8 @@ class PetsController < ApplicationController
 
   get '/pet/:id/edit' do
 
+  end
+
   patch '/pets/:id' do
 
     redirect to "pets/#{@pet.id}"
