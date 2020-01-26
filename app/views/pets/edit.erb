@@ -10,6 +10,7 @@
 <h3>Existing Owner</h3>
   <% @owner.each do |owner| %>
     <% if owner.id == @pet.owner_id %>
+      <h4><%=owner.name%></h4>
     <% end %>
   <% end %>
 
