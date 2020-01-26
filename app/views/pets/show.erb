@@ -3,7 +3,7 @@
 <% @pets.each do |pet| %>
   <h4>Name: <%= pet.name %></h4>
   <% @owner.each do |owner| %>
-    <% if pet.id == ow %>
+    <% if pet.owner_id == owner.id %>
   <% end %>
 <% end %>
 
