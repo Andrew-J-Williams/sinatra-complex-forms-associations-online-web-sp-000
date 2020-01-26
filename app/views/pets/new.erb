@@ -9,6 +9,7 @@
   <% @owners.each do |owner| %>
     <input type="radio" name="pet[owner_id][]" id="<%= owner.id %>" value="<%= owner.id %>">
     <%= owner.name %>
+  </input>
   <% end %>
   <br>
 
