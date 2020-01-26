@@ -1,16 +1,11 @@
 <h1>Pets directory</h1>
 
 <% @pets.each do |pet| %>
-  <h4>Name: <%= pet.name %></h4>
+  <h4>Name: <%=pet.name%></h4>
   <% @owner.each do |owner| %>
     <% if pet.owner_id == owner.id %>
-    <h4><%= owner.name%></h4>
+    <h4><%=owner.name%></h4>
   <% end %>
 <% end %>
 
 
-
-
-  <%@owner.pets.each do |pet|%>
-  <li><%=pet.name%></li>
-  <%end%>
