@@ -1,6 +1,6 @@
 <h1>Pets directory</h1>
 
-<h1><%=@pets.name%></h1>
+<% @pets.each do |pet| %>
 <h4>Pets:</h4>
 <ul>
   <%@owner.pets.each do |pet|%>
